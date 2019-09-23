@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="172dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="64dp"
+        android:onClick="playTapped"
+        android:text="@string/play_label"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bpmValue" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="172dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="64dp"
+        android:clickable="false"
+        android:onClick="playTapped"
+        android:text="@string/stop_label"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bpmValue"
+        app:layout_constraintVertical_bias="0.501" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="172dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="tempoTapped"
+        android:text="@string/tap_label"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/bpmValue"
+        android:layout_width="145dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/bpm_value"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/bpm_value" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Metronome</string>
+    <string name="temp_message">Enter your tempo</string>
+    <string name="label_text">BPM</string>
+    <string name="tap_label">Tap Tempo</string>
+    <string name="play_label">Play</string>
+    <string name="bpm_value">0 bpm</string>
+    <string name="stop_label">Stop</string>
+</resources>
